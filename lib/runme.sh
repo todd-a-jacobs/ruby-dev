@@ -10,11 +10,16 @@ git rev-parse --is-inside-work-tree > /dev/null 2>&1
 cd "$(git rev-parse --show-toplevel)"
 
 bundle install
-#bundle install --binstubs
-#export PATH="$PWD/bin:$PATH"
 
-alias veewee='bundle exec veewee'
-alias vagrant='bundle exec vagrant'
+# Will not work properly as aliases inside the script, although they
+# seem to work fine at the command line. They work reliably as
+# functions, though.
+veewee () {
+    bundle exec veewee "$@"
+}
+vagrant () {
+    bundle exec vagrant "$@"
+}
 
 template='Debian-6.0.5-i386-netboot'
 vmname='debian-6.0.5-i386'
