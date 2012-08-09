@@ -1,0 +1,37 @@
+# Temporary files.
+*~
+*.swp
+*.bak
+
+# OS X
+.DS_Store
+
+# Vim artifacts, other than temp files.
+Session.vim
+
+# RDoc and YARD files.
+/doc/
+/rdoc/
+/html/
+/.yardoc/
+
+# Ignore ctags and etags.
+tags
+TAGS
+
+# Ignore Ruby environment files.
+.rvmrc
+.rbenv
+
+######################################################################
+# Rails
+######################################################################
+# Ignore bundler config in $RAILS_ROOT.
+/.bundle
+
+# Ignore the default SQLite database in Rails.
+/db/*.sqlite3
+
+# Ignore Rails logfiles and tempfiles.
+/log/*.log
+/tmp

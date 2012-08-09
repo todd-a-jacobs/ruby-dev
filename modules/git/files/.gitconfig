@@ -1,0 +1,56 @@
+[user]
+        name = Vagrant
+        email = vagrant at example dot com
+[core]
+        excludesfile = ~/.gitignore
+        editor = /usr/bin/vim
+        autocrlf = input
+        safecrlf = true
+[gui]
+        editor = /usr/bin/gvim
+[diff "jpg"]
+        textconv = exif
+        cachetextconv = true
+[diff "msword"]
+        textconv=antiword
+[diff "odf"]
+        textconv=odt2txt
+[diff "pdf"]
+        textconv = pdftotext
+[diff]
+        renames = copy
+[alias]
+        aggro = gc --aggressive
+        archive-head = ! "git archive --format=tar --prefix=\"${PWD##*/}/\"  HEAD | gzip > \"../${PWD##*/}.tar.gz\""
+        blankinit = ! "git init; git commit --allow-empty --message='Empty initial commit.'"
+        contains = describe --long --always --contains
+        desc = describe --long --tags
+        filemods = ! "git whatchanged --since=midnight | egrep '^:' | awk '{print $NF}' | sort -du"
+        fsck = fsck --full --strict
+        gconfig = config --global
+        github-email = ! git config user.email "${GITHUB_EMAIL?Value not exported.}"
+        github-init = ! "git init && git github-email && git blankinit && git remote add origin \"git@github.com:${GITHUB_USERNAME?Value not exported.}/${PWD##*/}.git\")"
+        github-init-push = push --all --tags origin master
+        init-blank = blankinit
+        llog = log --stat -M -C --find-copies-harder
+        loc = ! " git log --committer=`git config user.email` --numstat | awk '/^[0-9]/ {LOC+=$1; LOC+=$2}; END {print LOC}' "
+        local-exclude = ! vim "$(git rev-parse --git-dir)/info/exclude"
+        log1 = log --oneline
+        lognames = log --name-only
+        numfilemods = ! "git whatchanged --since=midnight | egrep '^:' | wc -l"
+        padd = ! "git add -p; git commit -v"
+        prm = pull --rebase origin master
+        pr = pull --rebase
+        rebase-initial-commit = rebase --root master
+        today = ! "git log --oneline --since=midnight --author=$(git config user.email)"
+        toplevel = rev-parse --show-toplevel
+        untracked = status --ignored --untracked-files
+        upstream = remote add upstream
+        wdiff = diff --color-words
+        web = instaweb --http webrick
+[apply]
+        whitespace = fix
+[push]
+        default = tracking
+[grep]
+        extendedRegexp = true

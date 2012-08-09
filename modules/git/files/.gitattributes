@@ -1,0 +1,11 @@
+*.sh             export-subst
+*.md             export-subst
+*.markdown       export-subst
+README.asciidoc  export-subst
+
+.gitignore       export-ignore
+.gitattributes   export-ignore
+
+*jpg             binary
+*gif             binary
+*png             binary

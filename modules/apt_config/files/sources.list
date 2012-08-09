@@ -1,0 +1,21 @@
+#deb cdrom:[Debian GNU/Linux 6.0.5 _Squeeze_ - Official i386 NETINST Binary-1 20120512-20:43]/ squeeze main
+
+deb http://ftp.us.debian.org/debian/ squeeze main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ squeeze contrib non-free non-free
+
+deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ testing main contrib non-free
+
+deb http://ftp.us.debian.org/debian/ unstable main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ unstable main contrib non-free
+
+# squeeze-updates, previously known as 'volatile'
+deb http://http.us.debian.org/debian squeeze-updates main
+deb-src http://http.us.debian.org/debian squeeze-updates main
+
+# security updates
+deb http://security.debian.org squeeze/updates main contrib non-free
+deb-src http://security.debian.org squeeze/updates main contrib non-free
+
+deb http://security.debian.org testing/updates main contrib non-free
+deb-src http://security.debian.org testing/updates main contrib non-free

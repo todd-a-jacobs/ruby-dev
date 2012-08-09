@@ -1,0 +1,5 @@
+.vagrant
+definitions/
+iso/
+*.box
+bin/
