@@ -2,6 +2,29 @@
 
 # Purpose:
 #     Build and provision a Debian-based Ruby development box.
+#
+# Options:
+#     Use the FORCE environment variable to overwrite all existing
+#     definitions, ISO images, and Vagrant boxes. This is a sledgehammer
+#     option, not a fine-grained set of flags.
+#
+# Copyright:
+#     Copyright 2012 Todd A. Jacobs
+#     All rights reserved.
+#
+# License:
+#     Released under the GNU General Public License (GPL)
+#     http://www.gnu.org/copyleft/gpl.html
+#
+#     This program is free software; you can redistribute it and/or
+#     modify it under the terms of the GNU General Public License as
+#     published by the Free Software Foundation; either version 3 of the
+#     License, or (at your option) any later version.
+#
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#     General Public License for more details.
 
 set -e
 set -o pipefail
