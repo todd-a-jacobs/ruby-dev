@@ -24,7 +24,7 @@ vagrant () {
 template='Debian-6.0.5-i386-netboot'
 vmname='debian-6.0.5-i386'
 veewee vbox define ${FORCE:+--force} "$vmname" "$template"
-echo 'yes' | bundle exec veewee vbox build ${FORCE:+--force} 'debian-6.0.5-i386'
+echo 'yes' | veewee vbox build ${FORCE:+--force} 'debian-6.0.5-i386'
 
 # Verify the ISO.
 if (which md5sum > /dev/null); then
