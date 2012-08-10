@@ -73,7 +73,7 @@ This project particularly welcomes:
 ## Standing on the Shoulders of Giants
 
 This is a small project that leverages the excellent work of some other
-projects, including [Vagrant][1], [veewee][2], [VirtualBox][3], and
+projects, including [Vagrant][1], [VeeWee][2], [VirtualBox][3], and
 [RVM][4]. The author is grateful to everyone who has made contributions
 to those projects, as well as to all the countless other projects that
 *those* projects rely upon in turn.
