@@ -19,7 +19,7 @@ class apt_config {
             source  => "puppet:///modules/${module_name}/prefer_stable";
     }
 
-    exec { "update package lists":
+    exec { 'apt-update':
         command => '/usr/bin/apt-get update',
         user => root,
     }
