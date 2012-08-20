@@ -22,12 +22,9 @@ class apt_config {
         '/etc/apt/sources.list':
             ensure => present,
             source => "puppet:///modules/${module_name}/sources.list";
-    }
-
-
-    file { '/etc/apt/preferences.d/prefer_stable':
-        ensure  => present,
-        source  => "puppet:///modules/${module_name}/prefer_stable",
+        '/etc/apt/preferences.d/prefer_stable':
+            ensure  => present,
+            source  => "puppet:///modules/${module_name}/prefer_stable";
     }
 
     exec { "update package lists":
