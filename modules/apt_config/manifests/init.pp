@@ -17,9 +17,7 @@ class apt_config {
         '/etc/apt/preferences.d/prefer_stable':
             ensure  => present,
             source  => "puppet:///modules/${module_name}/prefer_stable";
-    }
-
-    exec { 'apt-update':
+    } -> exec { 'apt-update':
         command => '/usr/bin/apt-get update',
         user => root,
     }
