@@ -6,9 +6,9 @@ class hosts {
             ensure      => file,
             source      => "puppet:///modules/hosts/hosts",
             replace     => false,
-            owner       => root,
-            group       => root;
             mode        => 0644,
+            owner       => root,
+            group       => root,
     }
 
     host { $new_host_name:
