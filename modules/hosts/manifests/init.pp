@@ -1,10 +1,10 @@
 class hosts {
-    $new_host_name = "vagrant"
+    $new_host_name = 'vagrant.localdomain'
 
     file {
       '/etc/hosts':
             ensure      => file,
-            source      => "puppet:///modules/hosts/hosts",
+            source      => 'puppet:///modules/hosts/hosts',
             replace     => false,
             mode        => 0644,
             owner       => root,
@@ -15,6 +15,6 @@ class hosts {
         ensure => 'present',       
         target => '/etc/hosts',    
         ip => '127.0.1.1',         
-        host_aliases => [],
+        host_aliases => ['vagrant'],
     }
 }
