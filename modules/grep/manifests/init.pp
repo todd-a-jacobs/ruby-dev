@@ -3,13 +3,13 @@ class grep {
 
     $packages = [
        ack-grep,
-       xmlstarlet,
        agrep,
-       sgrep,
-       tre-agrep,
        grep,
        pcregrep,
        pdfgrep,
+       sgrep,
+       tre-agrep,
+       xmlstarlet,
     ]
     package { $packages: ensure => installed, }
 }
