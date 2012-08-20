@@ -1,5 +1,5 @@
 class hosts {
-    $new_host_name = 'vagrant.localdomain'
+    $new_host_name = 'vagrant'
 
     file {
       '/etc/hosts':
@@ -15,6 +15,6 @@ class hosts {
         ensure => 'present',       
         target => '/etc/hosts',    
         ip => '127.0.1.1',         
-        host_aliases => ['vagrant'],
+        host_aliases => [],
     }
 }
