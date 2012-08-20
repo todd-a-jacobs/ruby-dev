@@ -25,6 +25,7 @@ define line($file, $line, $ensure = 'present') {
 }
 
 class {'apt_clean': stage => last, }
+class {'apt_config': stage => first, }
 class {'apt_utils': }
 class {'awesome': }
 class {'browsers': }
