@@ -8,6 +8,7 @@ class hosts {
             replace     => false,
             owner       => root,
             group       => root;
+            mode        => 0644,
     }
 
     host { $new_host_name:
