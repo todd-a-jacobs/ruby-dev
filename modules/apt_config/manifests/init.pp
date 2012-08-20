@@ -7,14 +7,6 @@ class apt_config {
         group   => root,
     }
 
-    #define aptfile($file) {
-    #    file { "/etc/apt/${file}":
-    #        ensure => present,
-    #        source => "puppet:///modules/${module_name}/${file}",
-    #    }
-    #}
-    #aptfile{ [ 'apt.conf', 'sources.list', ]: }
-
     file {
         '/etc/apt/apt.conf':
             ensure => present,
