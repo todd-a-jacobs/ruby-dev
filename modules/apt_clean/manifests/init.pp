@@ -1,6 +1,5 @@
 class apt_clean {
-    exec { '/usr/bin/aptitude clean':
+    exec { '/usr/bin/apt-get clean':
         user => root,
-        require => Package['aptitude'],
     }
 }
