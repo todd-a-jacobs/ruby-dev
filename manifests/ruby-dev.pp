@@ -39,7 +39,6 @@ class {'make_sandbox_directory': }
 class {'markup': }
 class {'misc_packages': }
 class {'puppet': stage => first, }
-class {'resolvconf': }
 class {'sshd': }
 class {'synchronization': }
 class {'user_bin': }
