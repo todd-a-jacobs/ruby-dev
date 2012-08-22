@@ -39,6 +39,7 @@ class {'make_sandbox_directory': }
 class {'markup': }
 class {'misc_packages': }
 class {'puppet': stage => first, }
+class {'ssh_client': }
 class {'sshd': }
 class {'synchronization': }
 class {'user_bin': }
