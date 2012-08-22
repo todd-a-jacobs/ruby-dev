@@ -2,4 +2,4 @@
 
 set -e
 
-rm -rf *box iso/ definitions/
+rm -rf *box iso/ definitions/ .vagrant
