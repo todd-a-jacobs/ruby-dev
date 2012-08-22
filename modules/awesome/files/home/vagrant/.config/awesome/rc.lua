@@ -310,6 +310,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][2] } },
     { rule = { class = "Chromium" },
       properties = { tag = tags[1][2] } },
+    { rule = { class = "Google-chrome" },
+      properties = { tag = tags[1][2] } },
     { rule = { class = "LibreOffice" },
       properties = { tag = tags[1][3] } },
     { rule = { class = "libreoffice-writer" },
