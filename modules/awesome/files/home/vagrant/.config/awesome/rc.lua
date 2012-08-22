@@ -314,6 +314,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][3] } },
     { rule = { class = "libreoffice-writer" },
       properties = { tag = tags[1][3] } },
+    { rule = { class = "Keepassx" },
+      properties = { tag = tags[1][4] } },
 }
 -- }}}
 
