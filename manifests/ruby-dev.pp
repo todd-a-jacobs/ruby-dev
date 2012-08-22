@@ -44,5 +44,4 @@ class {'sshd': }
 class {'synchronization': }
 class {'user_bin': }
 class {'vim': }
-class {'virtualbox_guest_additions': }
 class {'virtual_displays': }
