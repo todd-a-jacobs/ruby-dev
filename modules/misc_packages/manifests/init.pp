@@ -4,6 +4,7 @@ class misc_packages {
     $packages = [
         bash-completion,
         clamav,
+        debsums,
         dirdiff,
         docdiff,
         gnu-fdisk,
