@@ -24,6 +24,7 @@ class misc_packages {
         password-gorilla,
         pcscd,
         pv,
+        rcs,
         tkcvs,
         wdiff,
         xclip,
