@@ -1,0 +1,15 @@
+Host *
+    User                vagrant
+    Compression         yes
+    ConnectionAttempts  3
+    ConnectTimeout      45
+    ControlMaster       auto
+    ControlPath         ~/.ssh/master-%r@%h:%p
+    ControlPersist      yes
+    ForwardAgent        no
+    ForwardX11          no
+    ForwardX11Trusted   no
+    ServerAliveCountMax 6
+    ServerAliveInterval 5
+    TCPKeepAlive        no
+    VisualHostKey       no
