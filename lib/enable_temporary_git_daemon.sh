@@ -63,7 +63,6 @@ git daemon \
 echo 'done!' >&2
 echo >&2
 
-
 echo "Connecting to ${PWD##*/} VM..." >&2
 vagrant ssh -- -R 9418:localhost:9418 \
                -o ControlPersist=no \
