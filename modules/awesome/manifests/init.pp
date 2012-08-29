@@ -28,6 +28,7 @@ class awesome {
         mode    => 0664,
         owner   => "$mortal_user",
         group   => "$mortal_user",
-        content => "\n[Desktop]\nSession=awesome"
+        content => "\n[Desktop]\nSession=awesome",
+        replace => false,
     }
 }
