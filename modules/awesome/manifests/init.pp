@@ -25,7 +25,7 @@ class awesome {
     # Default to using the awesome window manager.
     file { "/home/${mortal_user}/.dmrc":
         ensure  => file,
-        mode    => 0664,
+        mode    => 0600,
         owner   => "$mortal_user",
         group   => "$mortal_user",
         content => "\n[Desktop]\nSession=awesome",
